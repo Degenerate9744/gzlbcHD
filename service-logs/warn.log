@@ -1,0 +1,1 @@
+2024-01-08 21:45:41,075 WARN io.netty.util.internal.logging.AbstractInternalLogger [lettuce-nioEventLoop-4-2] Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
