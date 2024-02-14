@@ -44,11 +44,10 @@ public class LoginController {
     @ResponseBody
     @RequestMapping("/apiLogin")
     public ApiResult<UserVo> apiLogin(@RequestBody UserQuery userQuery,@RequestHeader(value = "client_type",required = false,defaultValue = "web") String clientType) throws UnsupportedEncodingException {
-        System.out.println("-----------------------------test");
         UserVo userVo = new UserVo();
         UserDto userDto = service.login(userQuery.getId());
         String token = service.generateToken(userDto.getId(), userQuery.getPassword(), clientType);
-        System.out.println("--------------------------"+token);
+        System.out.println("----------------"+token);
         if(userDto != null){
             BeanUtils.copyProperties(userDto,userVo);
             userVo.setToken(token);
@@ -62,6 +61,7 @@ public class LoginController {
         try{
             log.info("用户："+id+"进行登录");
             User user = service.selectByPrimaryKey(id);
+            System.out.println("-------"+user.toString());
             if(password.equals(user.getPassword())){
                 log.info("用户："+id+"登录成功");
                 attributes.addAttribute("id",id);

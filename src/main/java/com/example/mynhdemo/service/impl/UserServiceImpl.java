@@ -6,6 +6,7 @@ import com.example.mynhdemo.common.util.TokenUtil;
 import com.example.mynhdemo.constant.Constant;
 import com.example.mynhdemo.entity.dto.UserDto;
 import com.example.mynhdemo.entity.query.UserQuery;
+import com.example.mynhdemo.mapper.UserMapperPgs;
 import com.example.mynhdemo.service.UserService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +30,9 @@ public class UserServiceImpl implements UserService {
 
     @Resource
     private UserMapper userMapper;
+    @Resource
+    private UserMapperPgs userMapperPgs;
+
     @Autowired
     private RedisUtil redisUtil;
 
@@ -49,7 +53,8 @@ public class UserServiceImpl implements UserService {
 
     
     public User selectByPrimaryKey(Integer id) {
-        return userMapper.selectByPrimaryKey(id);
+        //return userMapper.selectByPrimaryKey(id);
+        return userMapperPgs.selectByPrimaryKeyPgs(id);
     }
 
     
@@ -81,6 +86,7 @@ public class UserServiceImpl implements UserService {
     public String generateToken(Integer id, String password, String clientType) throws UnsupportedEncodingException {
         String tokenValue = TokenUtil.generateTokenValue(clientType,id,password);
         Map<String,Object> map = new HashMap<>();
+        System.out.println("---------------------"+clientType+"     "+tokenValue);
         map.put(clientType,tokenValue);
         redisUtil.hmset("token:"+id,map);
 
