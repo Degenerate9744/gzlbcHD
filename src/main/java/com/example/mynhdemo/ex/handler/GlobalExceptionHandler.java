@@ -3,6 +3,7 @@ package com.example.mynhdemo.ex.handler;
 import com.example.mynhdemo.ex.MyException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -50,11 +51,11 @@ public class GlobalExceptionHandler {
     /**
      * 服务器异常
      */
-    @ExceptionHandler(Exception.class)
-    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
     public String exception(Exception e) {
-        log.error("服务器异常！ msg: -> ", e);
-        return "服务器异常!";
+        log.error("参数异常！ msg: -> ", e);
+        return "参数异常!";
     }
 }
 

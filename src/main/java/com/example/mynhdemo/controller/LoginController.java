@@ -15,6 +15,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.view.RedirectView;
@@ -43,7 +44,7 @@ public class LoginController {
 
     @ResponseBody
     @RequestMapping("/apiLogin")
-    public ApiResult<UserVo> apiLogin(@RequestBody UserQuery userQuery,@RequestHeader(value = "client_type",required = false,defaultValue = "web") String clientType) throws UnsupportedEncodingException {
+    public ApiResult<UserVo> apiLogin(@RequestBody @Validated UserQuery userQuery,@RequestHeader(value = "client_type",required = false,defaultValue = "web") String clientType) throws UnsupportedEncodingException {
         UserVo userVo = new UserVo();
         UserDto userDto = service.login(userQuery.getId());
         String token = service.generateToken(userDto.getId(), userQuery.getPassword(), clientType);
@@ -186,4 +187,9 @@ public class LoginController {
             return new RedirectView("/login/wrong");
         }
     }
+    //@ResponseBody
+    //@RequestMapping("/test")
+    //public void test(@Validated UserQuery userQuery){
+    //    System.out.println("------------------test");
+    //}
 }
