@@ -41,10 +41,4 @@ public class PermissionController {
             return new RedirectView("/login/wrong");
         }
     }
-
-    @ResponseBody
-    @RequestMapping("/test")
-    public String test(){
-        return "test";
-    }
 }
