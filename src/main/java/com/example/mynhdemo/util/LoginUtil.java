@@ -47,4 +47,19 @@ public class LoginUtil {
         UserRolePermission urp = new UserRolePermission(ur, pr, p);
         return urp;
     }
+
+    public static ArrayList<Integer> getRoleOrPermission(String option){
+        ArrayList<Integer> arr = new ArrayList<>();
+        int j;
+        for (int i = 0; i < option.length(); i++) {
+            if(Character.isDigit(option.charAt(i))){
+                j = i+1;
+                while (Character.isDigit(option.charAt(j))){
+                    j++;
+                }
+                arr.add(Integer.parseInt(option.substring(i,j)));
+            }
+        }
+        return arr;
+    }
 }

@@ -7,16 +7,15 @@ import lombok.ToString;
 import java.util.ArrayList;
 
 /**
- * @ClassName：OptionDto
+ * @ClassName：Option1Dto
  * @Author：Acmsdy
- * @Date：2024-02-27 20:31
+ * @Date：2024-02-28 18:54
  * @Describe：
  */
-@Getter
 @Setter
+@Getter
 @ToString
-public class OptionDto {
-    private Integer id;
-    private Integer flag;
-    private String option;
+public class Option1Dto {
+    private String roleOption;
+    private String permissionOption;
 }

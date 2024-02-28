@@ -87,4 +87,9 @@
     where permission_id = #{permissionId,jdbcType=INTEGER}
     and role_id = #{roleId,javaType=INTEGER}
   </delete>
+  <delete id="deleteByRoleId" parameterType="java.lang.Integer">
+    <!--@mbg.generated-->
+    delete from permission_role
+    where role_id = #{roleId,javaType=INTEGER}
+  </delete>
 </mapper>

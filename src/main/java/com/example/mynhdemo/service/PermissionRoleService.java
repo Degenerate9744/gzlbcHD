@@ -32,4 +32,5 @@ public interface PermissionRoleService {
     public ArrayList<PermissionRole> selectPermissionRoleByRoleId(Integer roleId);
     public int deleteByPermissionId(Integer permissionId);
     public int deleteByPermissionIdAndRoleId(Integer permissionId,Integer roleId);
+    public int deleteByRoleId(Integer roleId);
 }

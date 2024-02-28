@@ -60,4 +60,7 @@ public class PermissionRoleServiceImpl implements PermissionRoleService {
     public int deleteByPermissionIdAndRoleId(Integer permissionId,Integer roleId){
         return permissionRoleMapper.deleteByPermissionIdAndRoleId(permissionId,roleId);
     }
+    public int deleteByRoleId(Integer roleId){
+        return permissionRoleMapper.deleteByRoleId(roleId);
+    }
 }

@@ -4,9 +4,11 @@ import com.example.mynhdemo.entity.domain.LoginRecord;
 import com.example.mynhdemo.entity.domain.PermissionRole;
 import com.example.mynhdemo.entity.domain.UserRole;
 import com.example.mynhdemo.entity.domain.UserRolePermission;
+import com.example.mynhdemo.entity.dto.Option1Dto;
 import com.example.mynhdemo.entity.dto.OptionDto;
 import com.example.mynhdemo.service.PermissionRoleService;
 import com.example.mynhdemo.service.UserRoleService;
+import com.example.mynhdemo.util.LoginUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -37,7 +39,7 @@ public class UserRolePermissionOption {
         String option = optionDto.getOption();
         System.out.println("================================"+option);
         //arr中保存了用户当前角色的选择情况，还未保存到数据库
-        ArrayList<Integer> arr = optionDto.getRole();
+        ArrayList<Integer> arr = LoginUtil.getRoleOrPermission(optionDto.getOption());
         //数据库中用户的角色拥有情况
         ArrayList<UserRole> ur = LoginRecord.urp.get(optionDto.getId()).getUr();
         //对比arr和ur后得出数据库中该用户需要添加的角色id集
@@ -80,6 +82,31 @@ public class UserRolePermissionOption {
         RedirectView redirectView = new RedirectView("/login/getRolePermission");
         redirectView.getAttributesMap().put("id", optionDto.getId());
         return redirectView;
+    }
+    /*修改角色的权限*/
+    @RequestMapping("/permission_update1")
+    public Object permissionUpdate1(@RequestBody Option1Dto option1Dto){
+        //当前端只选择角色或只选择权限时，两个option的长度最短是0或者22，0指空字符串，22指不携带角色或权限选择信息的字符串
+        if(option1Dto.getRoleOption().length()>22&&option1Dto.getPermissionOption().length()>22){
+            //待处理的角色
+            ArrayList<Integer> roleArr = LoginUtil.getRoleOrPermission(option1Dto.getRoleOption());
+            //待处理的权限
+            ArrayList<Integer> permissionArr = LoginUtil.getRoleOrPermission(option1Dto.getPermissionOption());
+
+            for (int i = 0; i < roleArr.size()-1; i++) {
+                permissionRoleService.deleteByRoleId(roleArr.get(i));
+                for (int j = 0; j < permissionArr.size()-1; j++) {
+                    permissionRoleService.insert(PermissionRole.builder().permissionId(permissionArr.get(j)).roleId(roleArr.get(i)).build());
+                }
+            }
+        }else if(option1Dto.getRoleOption().length()>22&&option1Dto.getPermissionOption().length()==22){
+            //待处理的角色
+            ArrayList<Integer> roleArr = LoginUtil.getRoleOrPermission(option1Dto.getRoleOption());
+            for (int i = 0; i < roleArr.size()-1; i++) {
+                permissionRoleService.deleteByRoleId(roleArr.get(i));
+            }
+        }
+        return new RedirectView("/login/getRolePermission");
     }
     /*为用户添加角色*/
     @RequestMapping("/add_role_to_user")

@@ -30,4 +30,5 @@ public interface PermissionRoleMapper {
     int deleteByPermissionId(Integer permissionId);
 
     int deleteByPermissionIdAndRoleId(@Param("permissionId") Integer permissionId,@Param("roleId") Integer roleId);
+    int deleteByRoleId(@Param("roleId") Integer roleId);
 }
