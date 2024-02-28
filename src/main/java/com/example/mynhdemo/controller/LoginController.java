@@ -78,12 +78,14 @@ public class LoginController {
     public String getRolePermission(@RequestParam(required = false) Integer id){
         try {
             if(id == null){
+                //更新角色或权限后对所有已登录用户的权限进行更新
                 for (Integer key : LoginRecord.urp.keySet()) {
                     UserRolePermission urp = LoginUtil.getUserRolePermission(userRoleService, permissionRoleService, permissionService, key);
                     LoginRecord.urp.put(key,urp);
                     log.info("用户："+key+"获取了权限");
                 }
             }else {
+                //更新某个用户的角色信息
                 UserRolePermission urp = LoginUtil.getUserRolePermission(userRoleService,permissionRoleService,permissionService,id);
                 LoginRecord.urp.put(id,urp);
                 log.info("用户："+id+"获取了权限");

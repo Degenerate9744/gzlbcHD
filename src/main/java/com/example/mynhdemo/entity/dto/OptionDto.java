@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.util.ArrayList;
+
 /**
  * @ClassName：OptionDto
  * @Author：Acmsdy
@@ -14,7 +16,22 @@ import lombok.ToString;
 @Setter
 @ToString
 public class OptionDto {
-    private String id;
+    private Integer id;
     private Integer flag;
     private String option;
+
+    public ArrayList<Integer> getRole(){
+        ArrayList<Integer> arr = new ArrayList<>();
+        int j;
+        for (int i = 0; i < option.length(); i++) {
+            if(Character.isDigit(option.charAt(i))){
+                j = i+1;
+                while (Character.isDigit(option.charAt(j))){
+                    j++;
+                }
+                arr.add(Integer.parseInt(option.substring(i,j)));
+            }
+        }
+        return arr;
+    }
 }
