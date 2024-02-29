@@ -21,6 +21,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.view.RedirectView;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.io.UnsupportedEncodingException;
 
 /**
@@ -41,10 +42,11 @@ public class LoginController {
     private PermissionRoleService permissionRoleService;
     @Autowired
     private PermissionService permissionService;
+    @Autowired
+    private HttpSession httpSession;
 
-    @ResponseBody
     @RequestMapping("/apiLogin")
-    public ApiResult<UserVo> apiLogin(@RequestBody @Validated UserQuery userQuery,@RequestHeader(value = "client_type",required = false,defaultValue = "web") String clientType) throws UnsupportedEncodingException {
+    public String apiLogin(@RequestBody @Validated UserQuery userQuery,@RequestHeader(value = "client_type",required = false,defaultValue = "web") String clientType,RedirectAttributes attributes) throws UnsupportedEncodingException {
         UserVo userVo = new UserVo();
         UserDto userDto = service.login(userQuery.getId());
         String token = service.generateToken(userDto.getId(), userQuery.getPassword(), clientType);
@@ -52,9 +54,12 @@ public class LoginController {
         if(userDto != null){
             BeanUtils.copyProperties(userDto,userVo);
             userVo.setToken(token);
-            return ApiResult.success(userVo);
+            attributes.addAttribute("id",userQuery.getId());
+            // 将UserVo对象存储到会话中
+            httpSession.setAttribute("userVo", userVo);
+            return "redirect:getRolePermission";
         }
-        return ApiResult.fail(ApiConstant.API_LOGIN_FAIL,"错误");
+        return "redirect:wrong";
     }
 
     @RequestMapping("/verify_account_password")
@@ -90,6 +95,9 @@ public class LoginController {
                 LoginRecord.urp.put(id,urp);
                 log.info("用户："+id+"获取了权限");
             }
+            /*// 从会话中获取UserVo对象
+            UserVo userVo = (UserVo) httpSession.getAttribute("userVo");
+            System.out.println("==============================="+userVo.getId());*/
             return "redirect:successful";
         }catch (RuntimeException e){
             return "redirect:wrong";
@@ -97,13 +105,14 @@ public class LoginController {
     }
     @ResponseBody
     @RequestMapping("/wrong")
-    public String wrong(){
-        return "wrong";
+    public ApiResult<UserVo> wrong(){
+        return ApiResult.fail(ApiConstant.API_LOGIN_FAIL,"错误");
     }
     @ResponseBody
     @RequestMapping("/successful")
-    public String successful(){
-        return "successful";
+    public ApiResult<UserVo> successful(){
+        UserVo userVo = (UserVo) httpSession.getAttribute("userVo");
+        return ApiResult.success(userVo);
     }
 
     /*用来测试权限的方法*/

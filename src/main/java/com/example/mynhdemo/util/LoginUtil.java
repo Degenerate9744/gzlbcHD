@@ -58,6 +58,7 @@ public class LoginUtil {
                     j++;
                 }
                 arr.add(Integer.parseInt(option.substring(i,j)));
+                i=j-1;
             }
         }
         return arr;
