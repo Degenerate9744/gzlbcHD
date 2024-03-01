@@ -1,528 +1,325 @@
-2024-02-29 09:40:53,572 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 20856 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
-2024-02-29 09:40:53,585 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2024-02-29 09:40:54,165 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-02-29 09:40:54,167 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-02-29 09:40:54,210 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
-2024-02-29 09:40:54,498 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 09:40:54,499 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$436de828] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 09:40:54,508 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 09:40:54,703 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2024-02-29 09:40:54,712 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2024-02-29 09:40:54,712 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2024-02-29 09:40:54,712 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2024-02-29 09:40:54,828 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2024-02-29 09:40:54,828 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1218 ms
-2024-02-29 09:40:54,833 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
-2024-02-29 09:40:54,871 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
-2024-02-29 09:40:55,735 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
-2024-02-29 09:40:55,912 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
-2024-02-29 09:40:55,912 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
-2024-02-29 09:40:55,912 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
-2024-02-29 09:40:55,912 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
-2024-02-29 09:40:56,403 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2024-02-29 09:40:56,415 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2024-02-29 09:40:56,422 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 3.149 seconds (JVM running for 4.361)
-2024-02-29 09:41:10,429 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-29 09:41:10,429 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2024-02-29 09:41:10,430 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
-2024-02-29 09:41:10,435 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
-2024-02-29 09:41:10,523 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-1] 用户：2获取了权限
-2024-02-29 09:41:10,550 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
-2024-02-29 09:41:10,665 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-3] ******Filter的doFilter方法执行******
-2024-02-29 09:41:58,632 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
-2024-02-29 09:41:58,817 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-6] ******Filter的doFilter方法执行******
-2024-02-29 09:41:58,836 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-6] 用户：2获取了权限
-2024-02-29 09:41:58,841 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-7] ******Filter的doFilter方法执行******
-2024-02-29 09:42:15,093 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-10] ******Filter的doFilter方法执行******
-2024-02-29 09:42:15,100 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
-2024-02-29 09:42:15,102 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-1] 用户：2获取了权限
-2024-02-29 09:42:15,125 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-3] ******Filter的doFilter方法执行******
-2024-02-29 09:42:16,041 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
-2024-02-29 09:42:16,046 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-5] ******Filter的doFilter方法执行******
-2024-02-29 09:42:16,051 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-5] 用户：2获取了权限
-2024-02-29 09:42:16,053 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-7] ******Filter的doFilter方法执行******
-2024-02-29 09:42:16,841 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-9] ******Filter的doFilter方法执行******
-2024-02-29 09:42:16,846 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-8] ******Filter的doFilter方法执行******
-2024-02-29 09:42:16,854 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-8] 用户：2获取了权限
-2024-02-29 09:42:16,855 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-10] ******Filter的doFilter方法执行******
-2024-02-29 09:42:34,832 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
-2024-02-29 09:42:34,848 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
-2024-02-29 09:42:34,853 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
-2024-02-29 09:42:34,859 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
-2024-02-29 09:42:34,859 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
-2024-02-29 09:42:34,861 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
-2024-02-29 09:42:34,862 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
-2024-02-29 09:45:04,880 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 16748 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
-2024-02-29 09:45:04,886 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2024-02-29 09:45:05,299 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-02-29 09:45:05,300 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-02-29 09:45:05,347 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
-2024-02-29 09:45:05,644 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 09:45:05,647 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$cfd74537] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 09:45:05,656 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 09:45:05,868 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2024-02-29 09:45:05,877 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2024-02-29 09:45:05,878 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2024-02-29 09:45:05,878 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2024-02-29 09:45:05,998 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2024-02-29 09:45:05,998 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1089 ms
-2024-02-29 09:45:06,001 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
-2024-02-29 09:45:06,027 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
-2024-02-29 09:45:06,923 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
-2024-02-29 09:45:07,035 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
-2024-02-29 09:45:07,035 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
-2024-02-29 09:45:07,036 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
-2024-02-29 09:45:07,036 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
-2024-02-29 09:45:07,480 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2024-02-29 09:45:07,493 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2024-02-29 09:45:07,499 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 2.908 seconds (JVM running for 3.981)
-2024-02-29 09:45:24,506 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-29 09:45:24,507 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2024-02-29 09:45:24,508 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
-2024-02-29 09:45:24,513 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
-2024-02-29 09:50:52,413 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
-2024-02-29 09:50:52,419 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
-2024-02-29 09:50:52,420 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
-2024-02-29 09:50:52,422 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
-2024-02-29 09:50:52,422 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
-2024-02-29 09:50:52,423 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
-2024-02-29 09:50:52,423 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
-2024-02-29 09:57:46,325 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 3532 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
-2024-02-29 09:57:46,336 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2024-02-29 09:57:46,973 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-02-29 09:57:46,974 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-02-29 09:57:47,000 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-2024-02-29 09:57:47,248 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 09:57:47,251 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$15437712] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 09:57:47,264 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 09:57:47,465 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2024-02-29 09:57:47,472 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2024-02-29 09:57:47,473 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2024-02-29 09:57:47,473 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2024-02-29 09:57:47,565 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2024-02-29 09:57:47,565 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1191 ms
-2024-02-29 09:57:47,569 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
-2024-02-29 09:57:47,600 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
-2024-02-29 09:57:48,364 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
-2024-02-29 09:57:48,492 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
-2024-02-29 09:57:48,493 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
-2024-02-29 09:57:48,493 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
-2024-02-29 09:57:48,493 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
-2024-02-29 09:57:48,951 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2024-02-29 09:57:48,982 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2024-02-29 09:57:48,989 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 2.982 seconds (JVM running for 4.677)
-2024-02-29 09:58:01,244 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-29 09:58:01,244 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2024-02-29 09:58:01,245 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
-2024-02-29 09:58:01,250 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
-2024-02-29 09:58:52,504 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
-2024-02-29 09:58:52,511 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
-2024-02-29 09:58:52,514 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
-2024-02-29 09:58:52,520 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
-2024-02-29 09:58:52,521 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
-2024-02-29 09:58:52,525 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
-2024-02-29 09:58:52,526 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
-2024-02-29 10:01:23,195 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 19500 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
-2024-02-29 10:01:23,202 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2024-02-29 10:01:23,765 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-02-29 10:01:23,767 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-02-29 10:01:23,791 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-2024-02-29 10:01:24,124 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:01:24,126 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$f1651c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:01:24,140 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:01:24,379 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2024-02-29 10:01:24,388 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:01:24,389 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2024-02-29 10:01:24,389 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2024-02-29 10:01:24,529 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2024-02-29 10:01:24,529 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1291 ms
-2024-02-29 10:01:24,535 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
-2024-02-29 10:01:24,578 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
-2024-02-29 10:01:25,596 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
-2024-02-29 10:01:25,724 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
-2024-02-29 10:01:25,724 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
-2024-02-29 10:01:25,724 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
-2024-02-29 10:01:25,724 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
-2024-02-29 10:01:26,174 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:01:26,188 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2024-02-29 10:01:26,195 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 3.31 seconds (JVM running for 4.591)
-2024-02-29 10:01:38,743 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-29 10:01:38,743 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
-2024-02-29 10:01:38,744 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
-2024-02-29 10:01:38,749 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
-2024-02-29 10:01:42,745 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-3] ******Filter的doFilter方法执行******
-2024-02-29 10:01:46,394 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-3] 用户：2获取了权限
-2024-02-29 10:02:02,375 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
-2024-02-29 10:02:02,621 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
-2024-02-29 10:02:02,626 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
-2024-02-29 10:02:02,627 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
-2024-02-29 10:02:02,629 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
-2024-02-29 10:02:02,629 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
-2024-02-29 10:02:02,630 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
-2024-02-29 10:02:02,630 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
-2024-02-29 10:02:24,375 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 17132 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
-2024-02-29 10:02:24,383 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2024-02-29 10:02:25,063 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-02-29 10:02:25,065 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-02-29 10:02:25,093 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-2024-02-29 10:02:25,378 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:02:25,380 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$d791dd24] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:02:25,393 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:02:25,601 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2024-02-29 10:02:25,613 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:02:25,613 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2024-02-29 10:02:25,613 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2024-02-29 10:02:25,721 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2024-02-29 10:02:25,721 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1303 ms
-2024-02-29 10:02:25,726 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
-2024-02-29 10:02:25,755 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
-2024-02-29 10:02:26,574 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
-2024-02-29 10:02:26,705 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
-2024-02-29 10:02:26,705 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
-2024-02-29 10:02:26,705 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
-2024-02-29 10:02:26,705 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
-2024-02-29 10:02:27,216 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:02:27,233 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2024-02-29 10:02:27,241 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 3.219 seconds (JVM running for 4.611)
-2024-02-29 10:02:40,367 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-29 10:02:40,367 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2024-02-29 10:02:40,368 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
-2024-02-29 10:02:40,374 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
-2024-02-29 10:02:54,631 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
-2024-02-29 10:03:12,679 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-2] 用户：2获取了权限
-2024-02-29 10:03:12,680 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
-2024-02-29 10:03:12,921 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
-2024-02-29 10:03:12,926 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
-2024-02-29 10:03:12,928 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
-2024-02-29 10:03:12,930 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
-2024-02-29 10:03:12,930 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
-2024-02-29 10:03:12,931 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
-2024-02-29 10:03:12,932 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
-2024-02-29 10:04:24,612 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 8640 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
-2024-02-29 10:04:24,618 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2024-02-29 10:04:25,111 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-02-29 10:04:25,113 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-02-29 10:04:25,137 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-2024-02-29 10:04:25,410 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:04:25,412 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$a7936082] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:04:25,424 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:04:25,642 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2024-02-29 10:04:25,651 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:04:25,652 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2024-02-29 10:04:25,652 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2024-02-29 10:04:25,759 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2024-02-29 10:04:25,759 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1111 ms
-2024-02-29 10:04:25,764 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
-2024-02-29 10:04:25,799 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
-2024-02-29 10:04:26,805 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
-2024-02-29 10:04:26,988 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
-2024-02-29 10:04:26,988 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
-2024-02-29 10:04:26,988 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
-2024-02-29 10:04:26,988 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
-2024-02-29 10:04:27,514 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:04:27,527 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2024-02-29 10:04:27,534 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 3.285 seconds (JVM running for 4.658)
-2024-02-29 10:04:55,619 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-29 10:04:55,619 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2024-02-29 10:04:55,620 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
-2024-02-29 10:04:55,624 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
-2024-02-29 10:05:04,776 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-3] ******Filter的doFilter方法执行******
-2024-02-29 10:05:15,568 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-3] 用户：2获取了权限
-2024-02-29 10:05:15,569 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
-2024-02-29 10:05:15,808 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
-2024-02-29 10:05:15,814 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
-2024-02-29 10:05:15,816 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
-2024-02-29 10:05:15,818 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
-2024-02-29 10:05:15,818 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
-2024-02-29 10:05:15,819 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
-2024-02-29 10:05:15,819 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
-2024-02-29 10:07:33,800 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 3348 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
-2024-02-29 10:07:33,807 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2024-02-29 10:07:34,392 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-02-29 10:07:34,394 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-02-29 10:07:34,426 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
-2024-02-29 10:07:34,752 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:07:34,754 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$95c02c40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:07:34,769 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:07:35,009 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2024-02-29 10:07:35,016 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:07:35,017 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2024-02-29 10:07:35,017 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2024-02-29 10:07:35,115 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2024-02-29 10:07:35,115 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1274 ms
-2024-02-29 10:07:35,120 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
-2024-02-29 10:07:35,155 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
-2024-02-29 10:07:35,947 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
-2024-02-29 10:07:36,082 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
-2024-02-29 10:07:36,082 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
-2024-02-29 10:07:36,083 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
-2024-02-29 10:07:36,083 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
-2024-02-29 10:07:36,615 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:07:36,629 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2024-02-29 10:07:36,636 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 3.18 seconds (JVM running for 4.453)
-2024-02-29 10:07:58,487 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-29 10:07:58,487 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2024-02-29 10:07:58,488 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
-2024-02-29 10:07:58,492 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
-2024-02-29 10:09:38,848 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
-2024-02-29 10:09:38,853 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
-2024-02-29 10:09:38,855 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
-2024-02-29 10:09:38,857 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
-2024-02-29 10:09:38,857 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
-2024-02-29 10:09:38,857 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
-2024-02-29 10:09:38,857 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
-2024-02-29 10:10:00,126 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 19484 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
-2024-02-29 10:10:00,133 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2024-02-29 10:10:00,670 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-02-29 10:10:00,673 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-02-29 10:10:00,698 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
-2024-02-29 10:10:00,972 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:10:00,973 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$9ec9288] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:10:00,985 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:10:01,196 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2024-02-29 10:10:01,205 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:10:01,206 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2024-02-29 10:10:01,206 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2024-02-29 10:10:01,323 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2024-02-29 10:10:01,323 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1162 ms
-2024-02-29 10:10:01,328 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
-2024-02-29 10:10:01,364 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
-2024-02-29 10:10:02,152 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
-2024-02-29 10:10:02,302 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
-2024-02-29 10:10:02,303 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
-2024-02-29 10:10:02,303 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
-2024-02-29 10:10:02,303 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
-2024-02-29 10:10:02,828 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:10:02,842 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2024-02-29 10:10:02,849 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 3.05 seconds (JVM running for 4.468)
-2024-02-29 10:10:17,074 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-29 10:10:17,075 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2024-02-29 10:10:17,078 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
-2024-02-29 10:10:17,086 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
-2024-02-29 10:10:21,535 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-3] ******Filter的doFilter方法执行******
-2024-02-29 10:10:23,583 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-3] 用户：2获取了权限
-2024-02-29 10:10:39,796 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
-2024-02-29 10:10:40,042 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
-2024-02-29 10:10:40,049 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
-2024-02-29 10:10:40,051 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
-2024-02-29 10:10:40,052 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
-2024-02-29 10:10:40,052 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
-2024-02-29 10:10:40,053 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
-2024-02-29 10:10:40,053 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
-2024-02-29 10:12:19,437 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 8916 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
-2024-02-29 10:12:19,445 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2024-02-29 10:12:20,071 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-02-29 10:12:20,074 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-02-29 10:12:20,117 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-2024-02-29 10:12:20,619 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:12:20,622 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$a7936082] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:12:20,641 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:12:20,954 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2024-02-29 10:12:20,963 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:12:20,963 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2024-02-29 10:12:20,963 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2024-02-29 10:12:21,075 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2024-02-29 10:12:21,075 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1585 ms
-2024-02-29 10:12:21,079 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
-2024-02-29 10:12:21,112 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
-2024-02-29 10:12:22,008 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
-2024-02-29 10:12:22,186 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
-2024-02-29 10:12:22,186 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
-2024-02-29 10:12:22,187 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
-2024-02-29 10:12:22,187 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
-2024-02-29 10:12:22,773 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:12:22,786 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2024-02-29 10:12:22,795 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 3.801 seconds (JVM running for 5.071)
-2024-02-29 10:12:29,417 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-29 10:12:29,417 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2024-02-29 10:12:29,418 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
-2024-02-29 10:12:29,422 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
-2024-02-29 10:12:32,089 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
-2024-02-29 10:12:34,392 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-2] 用户：2获取了权限
-2024-02-29 10:12:40,812 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
-2024-02-29 10:12:40,828 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
-2024-02-29 10:12:40,831 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
-2024-02-29 10:12:40,833 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
-2024-02-29 10:12:40,833 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
-2024-02-29 10:12:40,834 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
-2024-02-29 10:12:40,835 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
-2024-02-29 10:13:10,594 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 19356 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
-2024-02-29 10:13:10,602 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2024-02-29 10:13:11,185 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-02-29 10:13:11,187 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-02-29 10:13:11,236 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
-2024-02-29 10:13:11,636 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:13:11,639 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$47dc9be5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:13:11,661 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:13:11,895 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2024-02-29 10:13:11,903 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:13:11,904 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2024-02-29 10:13:11,904 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2024-02-29 10:13:12,053 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2024-02-29 10:13:12,054 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1419 ms
-2024-02-29 10:13:12,067 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
-2024-02-29 10:13:12,128 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
-2024-02-29 10:13:12,995 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
-2024-02-29 10:13:13,112 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
-2024-02-29 10:13:13,112 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
-2024-02-29 10:13:13,112 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
-2024-02-29 10:13:13,113 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
-2024-02-29 10:13:13,589 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:13:13,601 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2024-02-29 10:13:13,607 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 3.438 seconds (JVM running for 4.783)
-2024-02-29 10:13:23,795 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-29 10:13:23,796 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2024-02-29 10:13:23,796 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
-2024-02-29 10:13:23,801 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
-2024-02-29 10:13:26,456 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
-2024-02-29 10:13:35,249 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
-2024-02-29 10:13:35,254 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
-2024-02-29 10:13:35,255 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
-2024-02-29 10:13:35,257 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
-2024-02-29 10:13:35,257 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
-2024-02-29 10:13:35,258 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
-2024-02-29 10:13:35,258 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
-2024-02-29 10:13:40,124 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 11844 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
-2024-02-29 10:13:40,131 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2024-02-29 10:13:40,749 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-02-29 10:13:40,752 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-02-29 10:13:40,780 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-2024-02-29 10:13:41,058 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:13:41,061 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$80413b47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:13:41,075 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:13:41,355 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2024-02-29 10:13:41,361 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:13:41,362 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2024-02-29 10:13:41,362 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2024-02-29 10:13:41,466 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2024-02-29 10:13:41,466 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1303 ms
-2024-02-29 10:13:41,470 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
-2024-02-29 10:13:41,525 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
-2024-02-29 10:13:42,522 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
-2024-02-29 10:13:42,652 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
-2024-02-29 10:13:42,657 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
-2024-02-29 10:13:42,658 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
-2024-02-29 10:13:42,659 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
-2024-02-29 10:13:43,178 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:13:43,208 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2024-02-29 10:13:43,216 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 3.585 seconds (JVM running for 5.183)
-2024-02-29 10:13:54,293 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-29 10:13:54,294 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2024-02-29 10:13:54,295 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
-2024-02-29 10:13:54,299 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
-2024-02-29 10:13:57,333 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
-2024-02-29 10:14:00,368 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
-2024-02-29 10:14:00,374 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
-2024-02-29 10:14:00,377 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
-2024-02-29 10:14:00,379 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
-2024-02-29 10:14:00,379 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
-2024-02-29 10:14:00,379 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
-2024-02-29 10:14:00,380 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
-2024-02-29 10:16:06,496 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 13912 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
-2024-02-29 10:16:06,503 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2024-02-29 10:16:06,932 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-02-29 10:16:06,933 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-02-29 10:16:06,957 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
-2024-02-29 10:16:07,190 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:16:07,192 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$d5e69143] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:16:07,203 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:16:07,413 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2024-02-29 10:16:07,421 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:16:07,422 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2024-02-29 10:16:07,422 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2024-02-29 10:16:07,527 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2024-02-29 10:16:07,527 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 997 ms
-2024-02-29 10:16:07,532 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
-2024-02-29 10:16:07,571 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
-2024-02-29 10:16:08,588 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
-2024-02-29 10:16:08,732 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
-2024-02-29 10:16:08,732 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
-2024-02-29 10:16:08,732 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
-2024-02-29 10:16:08,732 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
-2024-02-29 10:16:09,333 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:16:09,345 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2024-02-29 10:16:09,352 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 3.172 seconds (JVM running for 4.393)
-2024-02-29 10:16:21,799 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-29 10:16:21,800 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
-2024-02-29 10:16:21,800 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
-2024-02-29 10:16:21,806 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
-2024-02-29 10:16:22,954 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
-2024-02-29 10:16:26,708 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-1] 用户：2获取了权限
-2024-02-29 10:16:34,894 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-3] ******Filter的doFilter方法执行******
-2024-02-29 10:16:35,142 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
-2024-02-29 10:16:35,146 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
-2024-02-29 10:16:35,148 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
-2024-02-29 10:16:35,149 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
-2024-02-29 10:16:35,149 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
-2024-02-29 10:16:35,150 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
-2024-02-29 10:16:35,150 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
-2024-02-29 10:18:13,350 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 516 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
-2024-02-29 10:18:13,360 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2024-02-29 10:18:13,970 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-02-29 10:18:13,971 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-02-29 10:18:14,002 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-2024-02-29 10:18:14,375 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:18:14,381 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$bcd8d10] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:18:14,400 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-29 10:18:14,701 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2024-02-29 10:18:14,709 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:18:14,709 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2024-02-29 10:18:14,709 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2024-02-29 10:18:14,844 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2024-02-29 10:18:14,844 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1446 ms
-2024-02-29 10:18:14,852 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
-2024-02-29 10:18:14,907 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
-2024-02-29 10:18:15,902 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
-2024-02-29 10:18:16,057 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
-2024-02-29 10:18:16,057 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
-2024-02-29 10:18:16,057 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
-2024-02-29 10:18:16,057 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
-2024-02-29 10:18:16,795 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2024-02-29 10:18:16,820 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2024-02-29 10:18:16,829 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 3.96 seconds (JVM running for 5.628)
-2024-02-29 10:18:31,525 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-29 10:18:31,525 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2024-02-29 10:18:31,525 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
-2024-02-29 10:18:31,530 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
-2024-02-29 10:18:32,656 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-3] ******Filter的doFilter方法执行******
-2024-02-29 10:18:32,678 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-3] 用户：2获取了权限
-2024-02-29 10:18:36,317 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-5] ******Filter的doFilter方法执行******
-2024-02-29 10:19:01,292 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
-2024-02-29 10:19:01,303 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-8] ******Filter的doFilter方法执行******
-2024-02-29 10:19:01,314 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-8] 用户：2获取了权限
-2024-02-29 10:19:06,225 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-7] ******Filter的doFilter方法执行******
-2024-02-29 10:19:20,379 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-9] ******Filter的doFilter方法执行******
-2024-02-29 10:19:20,391 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-10] ******Filter的doFilter方法执行******
-2024-02-29 10:19:20,405 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-10] 用户：2获取了权限
-2024-02-29 10:19:20,408 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
-2024-02-29 10:19:43,568 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-3] ******Filter的doFilter方法执行******
-2024-02-29 10:19:43,571 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
-2024-02-29 10:19:43,578 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-2] 用户：2获取了权限
-2024-02-29 10:19:43,579 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
-2024-02-29 10:19:50,568 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-6] ******Filter的doFilter方法执行******
-2024-02-29 10:19:50,601 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-8] ******Filter的doFilter方法执行******
-2024-02-29 10:19:50,610 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-8] 用户：2获取了权限
-2024-02-29 10:19:50,631 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-9] ******Filter的doFilter方法执行******
-2024-02-29 10:19:51,054 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-10] ******Filter的doFilter方法执行******
-2024-02-29 10:19:51,073 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
-2024-02-29 10:19:51,079 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-1] 用户：2获取了权限
-2024-02-29 10:19:51,080 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-3] ******Filter的doFilter方法执行******
-2024-02-29 10:19:58,906 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
-2024-02-29 10:19:58,922 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
-2024-02-29 10:19:58,928 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-4] 用户：2获取了权限
-2024-02-29 10:19:58,930 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-6] ******Filter的doFilter方法执行******
-2024-02-29 10:19:59,874 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-8] ******Filter的doFilter方法执行******
-2024-02-29 10:19:59,903 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-9] ******Filter的doFilter方法执行******
-2024-02-29 10:19:59,911 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-9] 用户：2获取了权限
-2024-02-29 10:19:59,913 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-10] ******Filter的doFilter方法执行******
-2024-02-29 10:20:00,359 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
-2024-02-29 10:20:00,378 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
-2024-02-29 10:20:00,385 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-2] 用户：2获取了权限
-2024-02-29 10:20:00,403 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
-2024-02-29 10:20:28,253 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
-2024-02-29 10:20:28,259 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
-2024-02-29 10:20:28,261 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
-2024-02-29 10:20:28,263 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
-2024-02-29 10:20:28,263 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
-2024-02-29 10:20:28,264 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
-2024-02-29 10:20:28,264 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
+2024-03-01 10:27:38,426 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 15076 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
+2024-03-01 10:27:38,453 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-03-01 10:27:39,361 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-01 10:27:39,367 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-01 10:27:39,425 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+2024-03-01 10:27:39,807 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:27:39,809 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$8116641b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:27:39,823 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:27:40,187 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2024-03-01 10:27:40,195 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-03-01 10:27:40,195 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2024-03-01 10:27:40,195 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-03-01 10:27:40,313 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-03-01 10:27:40,313 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1811 ms
+2024-03-01 10:27:40,316 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
+2024-03-01 10:27:40,347 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
+2024-03-01 10:27:41,165 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
+2024-03-01 10:27:41,341 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
+2024-03-01 10:27:41,342 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
+2024-03-01 10:27:41,342 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
+2024-03-01 10:27:41,342 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
+2024-03-01 10:27:41,828 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-03-01 10:27:41,849 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2024-03-01 10:27:41,856 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 4.042 seconds (JVM running for 6.0)
+2024-03-01 10:30:16,209 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-01 10:30:16,212 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-03-01 10:30:16,224 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 12 ms
+2024-03-01 10:30:16,232 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
+2024-03-01 10:30:17,548 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
+2024-03-01 10:30:17,576 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-2] 用户：2获取了权限
+2024-03-01 10:30:17,632 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
+2024-03-01 10:32:54,880 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-5] ******Filter的doFilter方法执行******
+2024-03-01 10:32:54,913 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-7] ******Filter的doFilter方法执行******
+2024-03-01 10:32:54,928 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-7] 用户：2获取了权限
+2024-03-01 10:32:54,930 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-8] ******Filter的doFilter方法执行******
+2024-03-01 10:34:22,794 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-9] ******Filter的doFilter方法执行******
+2024-03-01 10:34:22,826 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
+2024-03-01 10:34:22,836 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-1] 用户：2获取了权限
+2024-03-01 10:34:22,838 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-3] ******Filter的doFilter方法执行******
+2024-03-01 10:34:53,023 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
+2024-03-01 10:34:53,037 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-5] ******Filter的doFilter方法执行******
+2024-03-01 10:34:53,048 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-5] 用户：2获取了权限
+2024-03-01 10:34:53,049 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-6] ******Filter的doFilter方法执行******
+2024-03-01 10:36:18,543 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
+2024-03-01 10:36:18,555 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
+2024-03-01 10:36:18,559 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
+2024-03-01 10:36:18,563 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
+2024-03-01 10:36:18,563 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
+2024-03-01 10:36:18,565 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
+2024-03-01 10:36:18,565 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
+2024-03-01 10:42:37,491 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 22428 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
+2024-03-01 10:42:37,497 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-03-01 10:42:37,940 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-01 10:42:37,941 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-01 10:42:37,974 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-03-01 10:42:38,205 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:42:38,207 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$34ea3953] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:42:38,219 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:42:38,417 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2024-03-01 10:42:38,423 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-03-01 10:42:38,424 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2024-03-01 10:42:38,424 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-03-01 10:42:38,528 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-03-01 10:42:38,529 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 998 ms
+2024-03-01 10:42:38,533 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
+2024-03-01 10:42:38,562 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
+2024-03-01 10:42:39,417 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
+2024-03-01 10:42:39,562 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
+2024-03-01 10:42:39,562 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
+2024-03-01 10:42:39,562 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
+2024-03-01 10:42:39,562 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
+2024-03-01 10:42:40,009 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-03-01 10:42:40,021 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2024-03-01 10:42:40,028 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 2.936 seconds (JVM running for 4.159)
+2024-03-01 10:42:52,789 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-01 10:42:52,789 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-03-01 10:42:52,790 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2024-03-01 10:42:52,794 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
+2024-03-01 10:42:53,836 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-3] ******Filter的doFilter方法执行******
+2024-03-01 10:42:53,855 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-3] 用户：2获取了权限
+2024-03-01 10:42:53,857 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
+2024-03-01 10:43:39,776 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-5] ******Filter的doFilter方法执行******
+2024-03-01 10:48:46,008 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
+2024-03-01 10:48:46,023 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
+2024-03-01 10:48:46,027 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
+2024-03-01 10:48:46,031 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
+2024-03-01 10:48:46,031 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
+2024-03-01 10:48:46,033 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
+2024-03-01 10:48:46,034 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
+2024-03-01 10:48:54,793 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 7836 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
+2024-03-01 10:48:54,798 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-03-01 10:48:55,313 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-01 10:48:55,314 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-01 10:48:55,343 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-03-01 10:48:55,569 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:48:55,571 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$5edea2d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:48:55,593 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:48:55,777 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2024-03-01 10:48:55,783 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-03-01 10:48:55,783 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2024-03-01 10:48:55,784 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-03-01 10:48:55,894 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-03-01 10:48:55,894 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1072 ms
+2024-03-01 10:48:55,901 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
+2024-03-01 10:48:55,943 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
+2024-03-01 10:48:56,782 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
+2024-03-01 10:48:56,936 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
+2024-03-01 10:48:56,936 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
+2024-03-01 10:48:56,936 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
+2024-03-01 10:48:56,937 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
+2024-03-01 10:48:57,587 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-03-01 10:48:57,609 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2024-03-01 10:48:57,617 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 3.11 seconds (JVM running for 4.394)
+2024-03-01 10:49:09,757 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-01 10:49:09,758 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-03-01 10:49:09,760 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2024-03-01 10:49:09,765 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
+2024-03-01 10:49:11,210 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-3] ******Filter的doFilter方法执行******
+2024-03-01 10:49:11,245 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-3] 用户：2获取了权限
+2024-03-01 10:49:11,247 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
+2024-03-01 10:49:19,185 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-5] ******Filter的doFilter方法执行******
+2024-03-01 10:52:31,357 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
+2024-03-01 10:52:31,368 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
+2024-03-01 10:52:31,370 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
+2024-03-01 10:52:31,373 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
+2024-03-01 10:52:31,374 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
+2024-03-01 10:52:31,375 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
+2024-03-01 10:52:31,375 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
+2024-03-01 10:52:43,099 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 14856 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
+2024-03-01 10:52:43,108 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-03-01 10:52:43,678 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-01 10:52:43,680 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-01 10:52:43,717 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2024-03-01 10:52:44,027 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:52:44,029 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$48c0f3a3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:52:44,046 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:52:44,337 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2024-03-01 10:52:44,346 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-03-01 10:52:44,346 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2024-03-01 10:52:44,346 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-03-01 10:52:44,475 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-03-01 10:52:44,475 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1336 ms
+2024-03-01 10:52:44,479 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
+2024-03-01 10:52:44,507 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
+2024-03-01 10:52:45,283 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
+2024-03-01 10:52:45,407 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
+2024-03-01 10:52:45,407 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
+2024-03-01 10:52:45,407 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
+2024-03-01 10:52:45,407 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
+2024-03-01 10:52:45,893 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-03-01 10:52:45,905 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2024-03-01 10:52:45,913 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 3.177 seconds (JVM running for 4.335)
+2024-03-01 10:53:25,946 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-01 10:53:25,947 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-03-01 10:53:25,948 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2024-03-01 10:53:25,957 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
+2024-03-01 10:53:26,060 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-1] 用户：2获取了权限
+2024-03-01 10:53:26,083 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
+2024-03-01 10:53:53,527 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-3] ******Filter的doFilter方法执行******
+2024-03-01 10:53:53,571 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-5] ******Filter的doFilter方法执行******
+2024-03-01 10:53:53,575 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-5] 用户：2获取了权限
+2024-03-01 10:53:53,577 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-7] ******Filter的doFilter方法执行******
+2024-03-01 10:54:10,284 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-8] ******Filter的doFilter方法执行******
+2024-03-01 10:54:10,301 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-9] ******Filter的doFilter方法执行******
+2024-03-01 10:54:10,309 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-9] 用户：2获取了权限
+2024-03-01 10:54:10,329 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
+2024-03-01 10:54:37,087 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
+2024-03-01 10:54:37,092 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
+2024-03-01 10:54:37,093 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
+2024-03-01 10:54:37,095 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
+2024-03-01 10:54:37,095 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
+2024-03-01 10:54:37,095 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
+2024-03-01 10:54:37,095 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
+2024-03-01 10:55:46,738 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 8140 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
+2024-03-01 10:55:46,744 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-03-01 10:55:47,236 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-01 10:55:47,238 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-01 10:55:47,263 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-03-01 10:55:47,497 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:55:47,499 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$9ec9288] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:55:47,513 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:55:47,728 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2024-03-01 10:55:47,735 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-03-01 10:55:47,735 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2024-03-01 10:55:47,736 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-03-01 10:55:47,822 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-03-01 10:55:47,822 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1053 ms
+2024-03-01 10:55:47,825 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
+2024-03-01 10:55:47,852 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
+2024-03-01 10:55:48,770 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
+2024-03-01 10:55:48,931 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
+2024-03-01 10:55:48,931 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
+2024-03-01 10:55:48,932 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
+2024-03-01 10:55:48,932 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
+2024-03-01 10:55:49,565 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-03-01 10:55:49,606 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2024-03-01 10:55:49,615 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 3.199 seconds (JVM running for 4.827)
+2024-03-01 10:56:00,386 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-01 10:56:00,387 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-03-01 10:56:00,388 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2024-03-01 10:56:00,392 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
+2024-03-01 10:56:01,494 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
+2024-03-01 10:56:01,512 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-2] 用户：2获取了权限
+2024-03-01 10:56:01,514 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-3] ******Filter的doFilter方法执行******
+2024-03-01 10:56:14,800 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-5] ******Filter的doFilter方法执行******
+2024-03-01 10:56:37,358 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
+2024-03-01 10:56:37,364 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
+2024-03-01 10:56:37,366 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
+2024-03-01 10:56:37,368 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
+2024-03-01 10:56:37,368 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
+2024-03-01 10:56:37,369 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
+2024-03-01 10:56:37,369 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
+2024-03-01 10:57:46,910 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 8348 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
+2024-03-01 10:57:46,922 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-03-01 10:57:47,664 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-01 10:57:47,666 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-01 10:57:47,692 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-03-01 10:57:47,973 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:57:47,976 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$df17e561] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:57:47,990 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 10:57:48,245 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2024-03-01 10:57:48,254 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-03-01 10:57:48,254 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2024-03-01 10:57:48,255 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-03-01 10:57:48,352 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-03-01 10:57:48,353 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1386 ms
+2024-03-01 10:57:48,357 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
+2024-03-01 10:57:48,390 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
+2024-03-01 10:57:49,212 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
+2024-03-01 10:57:49,355 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
+2024-03-01 10:57:49,355 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
+2024-03-01 10:57:49,355 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
+2024-03-01 10:57:49,356 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
+2024-03-01 10:57:50,056 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-03-01 10:57:50,075 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2024-03-01 10:57:50,092 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 3.575 seconds (JVM running for 5.317)
+2024-03-01 10:58:01,246 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-01 10:58:01,246 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-03-01 10:58:01,247 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2024-03-01 10:58:01,251 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
+2024-03-01 10:58:02,359 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
+2024-03-01 10:58:02,382 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-2] 用户：2获取了权限
+2024-03-01 10:58:02,384 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-3] ******Filter的doFilter方法执行******
+2024-03-01 10:58:05,791 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
+2024-03-01 10:58:52,239 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
+2024-03-01 10:58:52,245 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
+2024-03-01 10:58:52,246 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
+2024-03-01 10:58:52,248 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
+2024-03-01 10:58:52,248 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
+2024-03-01 10:58:52,249 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
+2024-03-01 10:58:52,249 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye
+2024-03-01 11:00:36,996 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyNhDemoApplication using Java 1.8.0_111 on DESKTOP-GKJ0SK2 with PID 23756 (D:\IDEAworks\my-nh-demo\target\classes started by h in D:\IDEAworks\my-nh-demo)
+2024-03-01 11:00:37,003 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-03-01 11:00:37,564 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-01 11:00:37,566 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-01 11:00:37,609 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2024-03-01 11:00:37,876 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 11:00:37,879 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$3e3f2955] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 11:00:37,895 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-01 11:00:38,178 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2024-03-01 11:00:38,186 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-03-01 11:00:38,187 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2024-03-01 11:00:38,187 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-03-01 11:00:38,315 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-03-01 11:00:38,315 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1277 ms
+2024-03-01 11:00:38,320 INFO com.example.mynhdemo.filter.config.FilterConfig [main] ******注册自定义的filter过滤器******
+2024-03-01 11:00:38,352 INFO com.example.mynhdemo.filter.AuthenticationFilter [main] ******Filter的init方法执行******
+2024-03-01 11:00:39,195 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-1,gp} inited
+2024-03-01 11:00:39,331 INFO com.alibaba.druid.pool.DruidDataSource [main] {dataSource-2,mysql} inited
+2024-03-01 11:00:39,332 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [gp] success
+2024-03-01 11:00:39,332 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource - add a datasource named [mysql] success
+2024-03-01 11:00:39,332 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [main] dynamic-datasource initial loaded [2] datasource,primary datasource named [mysql]
+2024-03-01 11:00:39,774 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-03-01 11:00:39,802 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2024-03-01 11:00:39,808 INFO org.springframework.boot.StartupInfoLogger [main] Started MyNhDemoApplication in 3.159 seconds (JVM running for 4.371)
+2024-03-01 11:00:53,761 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-01 11:00:53,761 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-03-01 11:00:53,762 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
+2024-03-01 11:00:53,765 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
+2024-03-01 11:00:54,801 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-8] ******Filter的doFilter方法执行******
+2024-03-01 11:00:54,822 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-8] 用户：2获取了权限
+2024-03-01 11:00:54,845 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-9] ******Filter的doFilter方法执行******
+2024-03-01 11:01:01,927 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-6] ******Filter的doFilter方法执行******
+2024-03-01 11:01:01,949 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-10] ******Filter的doFilter方法执行******
+2024-03-01 11:01:01,959 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-10] 用户：2获取了权限
+2024-03-01 11:01:01,962 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-5] ******Filter的doFilter方法执行******
+2024-03-01 11:01:07,327 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
+2024-03-01 11:01:07,335 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
+2024-03-01 11:01:07,343 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-2] 用户：2获取了权限
+2024-03-01 11:01:07,345 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-8] ******Filter的doFilter方法执行******
+2024-03-01 11:01:38,686 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-9] ******Filter的doFilter方法执行******
+2024-03-01 11:01:38,691 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-7] ******Filter的doFilter方法执行******
+2024-03-01 11:01:38,702 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-7] 用户：2获取了权限
+2024-03-01 11:01:38,716 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-10] ******Filter的doFilter方法执行******
+2024-03-01 11:01:39,899 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-5] ******Filter的doFilter方法执行******
+2024-03-01 11:01:39,929 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-3] ******Filter的doFilter方法执行******
+2024-03-01 11:01:39,941 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-3] 用户：2获取了权限
+2024-03-01 11:01:39,943 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
+2024-03-01 11:01:40,445 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
+2024-03-01 11:01:40,456 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-9] ******Filter的doFilter方法执行******
+2024-03-01 11:01:40,463 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-9] 用户：2获取了权限
+2024-03-01 11:01:40,464 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-7] ******Filter的doFilter方法执行******
+2024-03-01 11:01:48,505 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-6] ******Filter的doFilter方法执行******
+2024-03-01 11:01:48,538 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-10] ******Filter的doFilter方法执行******
+2024-03-01 11:01:48,545 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-10] 用户：2获取了权限
+2024-03-01 11:01:48,546 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
+2024-03-01 11:01:48,991 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-3] ******Filter的doFilter方法执行******
+2024-03-01 11:01:49,009 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
+2024-03-01 11:01:49,018 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-1] 用户：2获取了权限
+2024-03-01 11:01:49,020 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-8] ******Filter的doFilter方法执行******
+2024-03-01 11:01:49,797 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-9] ******Filter的doFilter方法执行******
+2024-03-01 11:01:49,816 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-6] ******Filter的doFilter方法执行******
+2024-03-01 11:01:49,822 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-6] 用户：2获取了权限
+2024-03-01 11:01:49,841 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-5] ******Filter的doFilter方法执行******
+2024-03-01 11:01:50,356 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-4] ******Filter的doFilter方法执行******
+2024-03-01 11:01:50,376 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-2] ******Filter的doFilter方法执行******
+2024-03-01 11:01:50,382 INFO com.example.mynhdemo.controller.LoginController [http-nio-8080-exec-2] 用户：2获取了权限
+2024-03-01 11:01:50,383 INFO com.example.mynhdemo.filter.AuthenticationFilter [http-nio-8080-exec-1] ******Filter的doFilter方法执行******
+2024-03-01 11:02:06,109 INFO com.example.mynhdemo.filter.AuthenticationFilter [SpringApplicationShutdownHook] ******Filter的destroy方法执行******
+2024-03-01 11:02:06,116 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource start closing ....
+2024-03-01 11:02:06,118 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closing ...
+2024-03-01 11:02:06,119 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-1} closed
+2024-03-01 11:02:06,119 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closing ...
+2024-03-01 11:02:06,120 INFO com.alibaba.druid.pool.DruidDataSource [SpringApplicationShutdownHook] {dataSource-2} closed
+2024-03-01 11:02:06,120 INFO com.baomidou.dynamic.datasource.DynamicRoutingDataSource [SpringApplicationShutdownHook] dynamic-datasource all closed success,bye

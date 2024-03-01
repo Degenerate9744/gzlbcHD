@@ -30,7 +30,9 @@ public class LoginInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws IOException {
         System.out.println("preHandle被调用");
         String url = request.getRequestURI();
-        String token = request.getHeader("token");
+        String token = request.getHeader("Authorization");
+        token = token.substring(7);
+        System.out.println("+++++++++++++++++++++++"+token);
         String clientType = request.getHeader("client_type");
         if(clientType == null || clientType.isEmpty()){
             clientType = Constant.CLIENT_TYPE_WEB;
